@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="outer-box">
+      <div id="static-section" class="containers">
+        <div id="game-title-box" class="static-section-boxes">
+          <p id="game-title" class="white-barlow-text">
+            ROCK<br />PAPER<br />SCISSORS<br />LIZARD<br />SPOCK
+          </p>
+        </div>
+
+        <div id="score-box" class="static-section-boxes">
+          <p id="score-name" class="spaced-text font-size-big">SCORE</p>
+          <p id="displayedScore"></p>
+        </div>
+      </div>
+      <div id="turn-text-box">
+        <p id="turn-text" class="spaced-text white-barlow-text">YOUR TURN</p>
+      </div>
+      <div id="row" class="containers">
+        <div id="dynamic-section">
+          <div id="circle-container">
+            <!---->
+            <button
+              id="button-rock"
+              class="small-button"
+              onclick="pickButtonClick(this)"
+            >
+              <div
+                class="white-inside small-inside-button-size inside-image"
+                id="button-rock-inside"
+              ></div>
+            </button>
+            <button
+              id="button-paper"
+              class="small-button"
+              onclick="pickButtonClick(this)"
+            >
+              <div
+                class="white-inside small-inside-button-size inside-image"
+                id="button-paper-inside"
+              ></div>
+            </button>
+            <button
+              id="button-scissors"
+              class="small-button"
+              onclick="pickButtonClick(this)"
+            >
+              <div
+                class="white-inside small-inside-button-size inside-image"
+                id="button-scissors-inside"
+              ></div>
+            </button>
+            <button
+              id="button-lizard"
+              class="small-button"
+              onclick="pickButtonClick(this)"
+            >
+              <div
+                class="white-inside small-inside-button-size inside-image"
+                id="button-lizard-inside"
+              ></div>
+            </button>
+            <button
+              id="button-spock"
+              class="small-button"
+              onclick="pickButtonClick(this)"
+            >
+              <div
+                class="white-inside small-inside-button-size inside-image"
+                id="button-spock-inside"
+              ></div>
+            </button>
+            <div id="pentagon"></div>
+          </div>
+        </div>
+      </div>
+      <button id="rules-button" class="spaced-text">RULES</button>
+      <button
+        id="mode-button"
+        class="spaced-text"
+        onclick="pickButtonClick(this)"
+        x
+      ></button>
+    </div>
+    <div id="modal-background">
+      <div id="modal">
+        <div class="modal-content">
+          <div class="rules-line">
+            <p class="barlow-text blue-text">RULES</p>
+            <span id="close">&times;</span>
+          </div>
+          <img src="images/image-rules-bonus.svg" alt="" id="rules-image" />
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
